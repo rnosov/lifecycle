@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".PsamActivity" >
+
+    <Button
+        android:id="@+id/bt_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鎵撳紑妯″潡" />
+
+    <Spinner
+        android:id="@+id/sp_sam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澶嶄綅" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bt_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="鍙戦��" />
+
+        <EditText
+            android:id="@+id/et_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bt_send"
+            android:hint="璇疯緭鍏�16杩涘埗鎸囦护" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_getRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鑾峰彇闅忔満鏁�" />
+
+    <Button
+        android:id="@+id/bt_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="涓嬬數" />
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鍏抽棴妯″潡" />
+
+    <TextView
+        android:id="@+id/tv_customData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

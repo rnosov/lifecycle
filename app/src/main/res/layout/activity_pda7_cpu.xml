@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.authentication.activity.Pad7PsamActivity" >
+
+    <Button
+        android:id="@+id/bt_pad7_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pad7_psam_reset" />
+
+    <Button
+        android:id="@+id/bt_pad7_get_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/pad7_psam_get_random_number" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/et_pad7_cmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pad7_psam_cmd_hint"
+            android:minHeight="50dp"
+            android:minWidth="200dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_pad7_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/et_pad7_cmd"
+            android:text="@string/pad7_psam_send" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_pad7_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pad7_psam_receiver_data"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_pad7_receive_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_pad7_receive"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

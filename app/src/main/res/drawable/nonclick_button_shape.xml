@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 濉厖鐨勯鑹� -->
+    <solid android:color="@color/light_blue" />
+    <!-- 璁剧疆鎸夐挳鐨勫洓涓涓哄姬褰� -->
+    <!-- android:radius 寮у舰鐨勫崐寰� -->
+    <corners android:radius="5dip" />
+
+</shape>

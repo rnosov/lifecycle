@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    android:focusable="true"  
+   	android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/qr_show_code"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="right|bottom"
+        android:background="#000000"
+        android:layout_margin="5dp"
+        android:textColor="#00ff00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <CheckBox
+            android:id="@+id/qr_check_qr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="QR识别" />
+
+        <CheckBox
+            android:id="@+id/qr_check_dm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="DM识别" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <CheckBox
+            android:id="@+id/qr_check_barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="条码识别" />
+
+        <CheckBox
+            android:id="@+id/qr_check_nfc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="NFC识别" />
+    </LinearLayout>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="工作模式:"
+	    android:textColor="@color/black"
+	    android:textSize="18sp"
+	    />
+    <RadioGroup
+        android:id="@+id/qr_check_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/qr_check_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="普通模式（输出所有扫码内容）" 
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/qr_check_once"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="单次模式（相同的码只输出一次）" />
+        <RadioButton
+            android:id="@+id/qr_check_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="间隔模式（相同的码在一定时间间隔内只输出一次）" />
+    </RadioGroup>
+    <EditText 
+		    android:id="@+id/qr_mode_interval_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/black"
+		    android:layout_margin="5dp"
+		    android:inputType="number"
+		    android:hint="间隔模式间隔时间（s）:"
+		    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+		<EditText 
+		    android:id="@+id/qr_time_interval"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/black"
+		    android:inputType="number"
+		    android:hint="设置扫描间隔时间（ms）"
+		    />
+        <Button 
+            android:id="@+id/qr_time_interval_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:text="确定"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+		<Button 
+	        android:id="@+id/qr_query_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="@color/black"
+	        android:text="查询设备状态"/>
+		<Button 
+	        android:id="@+id/qr_open"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="@color/black"
+	        android:enabled="true"
+	        android:text="开启接收扫描数据"/>
+		<Button 
+	        android:id="@+id/qr_close"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="@color/black"
+	        android:enabled="false"
+	        android:text="关闭接收扫描数据"/>
+	</LinearLayout>
+</LinearLayout>

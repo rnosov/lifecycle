@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_device" />
+			<Button
+                android:id="@+id/button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/disconnect_device" />
+			<Button
+                android:id="@+id/button_cut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="切纸" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edittext_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="192.168.1." />
+
+            <EditText
+                android:id="@+id/edittext_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1234" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button_print_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/print_text" />
+
+            <EditText
+                android:id="@+id/edittext_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="测试文本测试文本测试文本" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button_print_bitmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/print_bitmap" />
+
+            <ImageView
+                android:id="@+id/imageview_bitmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image_faild"
+                android:scaleType="centerInside"
+                android:src="@drawable/test" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button_print_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/print_barcode" />
+
+            <EditText
+                android:id="@+id/edittext_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="4452545210" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button_print_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/print_qrcode" />
+
+            <EditText
+                android:id="@+id/edittext_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=2&amp;tn=baiduhome_pg&amp;wd=flush&amp;rsv_spt=1&amp;oq=flush&amp;rsv_pq=f8cd3a590001ccb1&amp;rsv_t=46f0S66Tg2XX9VbYGu3BljaqFXH130ejn45HCSGhcASVcnMZPBsr7BXYjA0DofL2eQqt&amp;rqlang=cn&amp;rsv_enter=0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

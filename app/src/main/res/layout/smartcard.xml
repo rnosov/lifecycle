@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+android:layout_width="fill_parent" android:layout_height="fill_parent"  
+android:orientation="vertical">  
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+	<LinearLayout android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+        <RelativeLayout 
+        android:id="@+id/widget50" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:gravity="center" 
+        >  
+            
+            	<EditText
+	    android:id="@+id/editText1"
+	    android:layout_width="match_parent"
+	    android:layout_height="240dp"
+	    android:layout_weight="0.68"
+	    android:cursorVisible="false"
+	    android:editable="false"
+	    android:ellipsize="end"
+	    android:inputType="textMultiLine"
+	    android:scrollbars="vertical" />
+
+
+
+        </RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/button_clean"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:onClick="onMyButtonClick"
+	        android:text="@string/button_clean" />
+
+	    <Button
+	        android:id="@+id/button_initcard"
+	        android:layout_width="80dp"
+	        android:visibility="invisible"
+	        android:layout_height="wrap_content"
+	        android:onClick="onMyButtonClick"
+	        android:text="@string/button_initcard" />
+	   
+
+	    <Button
+	        android:id="@+id/button_ReadIBAN"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:visibility="invisible"
+	        android:text="@string/button_ReadIBAN" />
+
+	    <Button
+	        android:id="@+id/button_printer"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:visibility="invisible"
+	        android:text="@string/button_printer" />
+	</LinearLayout>
+<!-- android:layout_weight="0.14" -->
+	<!-- <CheckBox android:id="@+id/checkBox_sixteen"
+		android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		android:text="@string/checkBox_sixteen" /> --> 
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal">
+		<EditText android:id="@+id/edit_text_out2"
+			android:visibility="gone"
+			 android:layout_width="160dp"
+			android:layout_height="64dp"
+			 android:inputType="textMultiLine"
+			android:digits="0123456789ABCDEF" 
+			android:ellipsize="end">
+			<requestFocus />
+		</EditText>
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		 android:orientation="horizontal">
+		<!-- <CheckBox android:id="@+id/radioMale"
+		 android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			 android:text="@string/radioMale" /> -->	</LinearLayout>
+
+	
+
+	
+	
+
+	
+
+	<!-- <EditText
+	    android:id="@+id/edit_text_out"
+	    android:layout_width="180dp"
+	    android:layout_height="28dp"
+	    android:ellipsize="end"
+	    android:ems="10"
+	    android:inputType="textMultiLine" /> -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+		
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:textColor="@color/black"
+        android:text="@string/TextView_name" />
+
+    <TextView
+        android:id="@+id/textView_records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:textColor="@color/black"
+        android:text="@string/TextView_records" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView_name"
+        android:layout_weight="0.29"
+        android:ellipsize="end"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/editText_records"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editText_records"
+        android:ellipsize="end"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+</LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView_ID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.27"
+        android:textColor="@color/black"
+        android:text="@string/TextView_ID" />
+
+    <TextView
+        android:id="@+id/textView_credits"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:textColor="@color/black"
+        android:text="@string/TextView_credits" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+	<EditText
+	    android:id="@+id/editText_ID"
+	    android:layout_width="158dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText_credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+</LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView_number"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:textColor="@color/black"
+        android:text="@string/TextView_number" />
+
+    <TextView
+        android:id="@+id/textView_amount"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:textColor="@color/black"
+        android:text="@string/TextView_amount" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	<EditText
+	    android:id="@+id/editText_number"
+	    android:layout_width="158dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10" />
+
+	<EditText
+	    android:id="@+id/editText_amount"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10" />
+
+</LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView_contact"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:textColor="@color/black"
+        android:text="@string/TextView_contact" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.56"
+        android:textColor="@color/black"
+        android:text="@string/TextView_time" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	<EditText
+	    android:id="@+id/editText_contact"
+	    android:layout_width="157dp"
+	    android:layout_height="match_parent"
+	    android:ems="10" />
+
+		<EditText
+		    android:id="@+id/editText_time"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:ems="10" />
+
+</LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+		<Button
+	    android:id="@+id/button_recv"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/recv" />
+
+	<Button
+	    android:id="@+id/button_send"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/send" />
+	<Button
+		    android:id="@+id/button_createfile"
+		    android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/button_createfile" />
+
+	<Button
+	    android:id="@+id/button_deletefile"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/button_deletefile" />
+
+	<!-- <Button
+	    android:id="@+id/button_printer"
+	    android:layout_width="78dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/button_printer" /> -->
+		</LinearLayout>
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/restore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restore" />
+
+            <Button
+                android:id="@+id/set_host"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_host"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/disable_all_symbologies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/disable_all_symbologies" />
+
+            <!-- *******************1D Symbologies********************* -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/one_d_symbologies"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upc_a_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/upc_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_upc_a"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_upc_a"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upc_e_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/upc_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_upc_e"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_upc_e"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upc_e1_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/upc_e1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_upc_e1"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_upc_e1"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ean_8_jan_8_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/ean_8_jan_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_ean_8_jan_8"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_ean_8_jan_8"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ean_13_jan_13_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/ean_13_jan_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_ean_13_jan_13"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_ean_13_jan_13"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bookland_ean_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/bookland_ean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_bookland_ean"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_bookland_ean"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bookland_isbn_format_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/bookland_isbn_format"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_bookland_isbn_10"
+                        android:text="@string/enable_isbn_10" />
+
+                    <RadioButton
+                        android:id="@+id/disable_bookland_isbn_13"
+                        android:text="@string/enable_isbn_13" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ucc_coupon_extended_code_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/ucc_coupon_extended_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_ucc_coupon_extended_code"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_ucc_coupon_extended_code"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/issn_ean_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/issn_ean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_issn_ean"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_issn_ean"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/code_128_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/code_128"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_code_128"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_code_128"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gs1_128_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/gs1_128"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_gs1_128"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_gs1_128"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isbt_128_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/isbt_128"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_isbt_128"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_isbt_128"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/code_39_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/code_39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_code_39"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_code_39"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trioptic_code_39_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/trioptic_code_39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_trioptic_code_39"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_trioptic_code_39"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/code_93_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/code_93"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_code_93"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_code_93"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/code_11_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/code_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_code_11"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_code_11"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/itf_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/itf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_itf"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_itf"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dtf_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/dtf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_dtf"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_dtf"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/codabar_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/codabar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_codabar"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_codabar"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msi_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/msi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_msi"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_msi"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ctf_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/ctf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_ctf"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_ctf"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mtf_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/mtf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_mtf"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_mtf"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ktf_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/ktf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_ktf"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_ktf"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inverse_1d_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/inverse_1d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/inverse_1d_regular_only"
+                        android:text="@string/regular" />
+
+                    <RadioButton
+                        android:id="@+id/inverse_1d_inverse_only"
+                        android:text="@string/inverse_only" />
+
+                    <RadioButton
+                        android:id="@+id/inverse_1d_inverse_autodetect"
+                        android:text="@string/inverse_autodetect" />
+                </RadioGroup>
+            </LinearLayout>
+            <!-- *******************2D Symbologies********************* -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/two_d_symbologies"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pdf417_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/pdf417"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_pdf417"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_pdf417"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/micro_pdf417_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/micro_pdf417"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_micro_pdf417"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_micro_pdf417"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/code_128_emulation_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/code_128_emulation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_code_128_emulation"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_code_128_emulation"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_matrix"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/data_matrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_data_matrix"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_data_matrix"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_matrix_inverse_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/data_matrix_inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/data_matrix_regular_only"
+                        android:text="@string/regular" />
+
+                    <RadioButton
+                        android:id="@+id/data_matrix_inverse_only"
+                        android:text="@string/inverse_only" />
+
+                    <RadioButton
+                        android:id="@+id/data_matrix_inverse_autodetect"
+                        android:text="@string/inverse_autodetect" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/decode_mirror_images_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/decode_mirror_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/decode_mirror_images_never"
+                        android:text="@string/never" />
+
+                    <RadioButton
+                        android:id="@+id/decode_mirror_images_always"
+                        android:text="@string/always" />
+
+                    <RadioButton
+                        android:id="@+id/decode_mirror_images_auto"
+                        android:text="@string/auto" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maxicode_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/maxicode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_maxicode"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_maxicode"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qr_code_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_qr_code"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_qr_code"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qr_inverse_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/qr_inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/qr_inverse_regular"
+                        android:text="@string/regular" />
+
+                    <RadioButton
+                        android:id="@+id/qr_inverse_only"
+                        android:text="@string/inverse_only" />
+
+                    <RadioButton
+                        android:id="@+id/qr_inverse_autodetect"
+                        android:text="@string/inverse_autodetect" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/micro_qr_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/micro_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_micro_qr"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_micor_qr"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aztec_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/aztec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_aztec"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_aztec"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aztec_inverse_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/aztec_inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/aztec_inverse_regular"
+                        android:text="@string/regular" />
+
+                    <RadioButton
+                        android:id="@+id/aztec_inverse_only"
+                        android:text="@string/inverse_only" />
+
+                    <RadioButton
+                        android:id="@+id/aztec_inverse_autodetect"
+                        android:text="@string/inverse_autodetect" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hanxin_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/hanxin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_hanxin"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_hanxin"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+            <!-- ************************************Postal Codes****************************************** -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/postal_codes"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/us_postnet_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/us_postnet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_us_postnet"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_us_postnet"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/us_planet_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/us_planet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_us_planet"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_us_planet"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uk_postal_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/uk_postal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_uk_postal"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_uk_postal"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/japan_postal_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/japan_postal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_japan_postal"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_japan_postal"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/australia_post_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/australia_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_australia_post"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_australia_post"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/netherlands_kix_code_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/netherlands_kix_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_netherlands_kix_code"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_netherlands_kix_code"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usps_4cb_one_code_intelligent_mail_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/usps_4cb_one_code_intelligent_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_usps_4cb_one_code_intelligent_mail"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_usps_4cb_one_code_intelligent_mail"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upu_fics_postal_text"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/upu_fics_postal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enable_upu_fics_postal"
+                        android:text="@string/enable" />
+
+                    <RadioButton
+                        android:id="@+id/disable_usps_upu_fics_postal"
+                        android:text="@string/disable" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

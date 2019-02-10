@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:id="@+id/readCardButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/read_15693" />
+
+    <Button
+        android:id="@+id/stopReadCardButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stopread" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/back_15693" />
+
+    <TextView
+        android:id="@+id/resultInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/rfidNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+
+</LinearLayout>

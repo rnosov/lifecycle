@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:background="@color/left_column_bk"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:id="@+id/txt_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/button_open"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_open"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:id="@+id/txt_inv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/button_inv"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_inv"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:clickable="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_singleSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/singleScan"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <Button
+                android:id="@+id/bt_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/setting"
+                android:textSize="@dimen/button_fornt_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/button_horizontal_margin"
+                android:paddingRight="@dimen/button_horizontal_margin"
+                android:text="@string/txt_count"
+                android:textColor="@color/txt_show_color"
+                android:textSize="@dimen/tag_count_fornt_size" />
+
+            <TextView
+                android:id="@+id/txtTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/button_horizontal_margin"
+                android:paddingRight="@dimen/button_horizontal_margin"
+                android:text="@string/txt_count"
+                android:textColor="@color/txt_show_color"
+                android:textSize="@dimen/tag_times_formt_size" />
+
+            <Button
+                android:id="@+id/setting_params"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@color/padding_line_color" >
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_taglist"
+            android:name="com.authentication.activity.TaglistFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/right_column_bk"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/tag_operation_fragment"
+            android:name="com.authentication.activity.TagOperFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

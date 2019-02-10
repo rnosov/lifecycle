@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/EnrollmentLeftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/ButtonLeftThumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/left_thumb" />
+
+            <Button
+                android:id="@+id/ButtonLeftIndex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/left_index" />
+
+            <Button
+                android:id="@+id/ButtonLeftMiddle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/left_middle" />
+
+            <Button
+                android:id="@+id/ButtonLeftRing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/left_ring" />
+
+            <Button
+                android:id="@+id/ButtonLeftLittle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/left_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/ButtonRightThumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/right_thumb" />
+
+            <Button
+                android:id="@+id/ButtonRightIndex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/right_index" />
+
+            <Button
+                android:id="@+id/ButtonRightMiddle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/right_middle" />
+
+            <Button
+                android:id="@+id/ButtonRightRing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/right_ring" />
+
+            <Button
+                android:id="@+id/ButtonRightLittle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/right_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/ButtonDeleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_all" />
+
+            <Button
+                android:id="@+id/ButtonVerifyAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/identify" />
+
+            <Button
+                android:id="@+id/ButtonGrab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grab" />
+
+            <Button
+                android:id="@+id/ButtonQuit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quit" />
+            <Button
+                android:id="@+id/ButtonVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Navigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_below="@+id/EnrollmentLeftLayout">
+
+            <Button
+                android:id="@+id/ButtonNavigateRaw"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/navigate_raw" />
+
+            <Button
+                android:id="@+id/ButtonNavigateMouse"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/navigate_mouse" />
+
+            <Button
+                android:id="@+id/ButtonNavigateDiscrete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/navigate_discrete" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/ll_Navigate">
+
+            <EditText
+                android:id="@+id/fbi_etID"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/fbi_regist"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/fbi_regist" />
+
+            <Button
+                android:id="@+id/fbi_save"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/fbi_save" />
+            <Button
+                android:id="@+id/fbi_verify"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/fbi_verify" />
+            <Button
+                android:id="@+id/fbi_clear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/fbi_clear" />
+        </LinearLayout>
+		<ImageView 
+		    android:id="@+id/fbi_image"
+		    android:layout_width="120dp"
+		    android:layout_height="120dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@+id/ll_save"
+		    />
+        <TextView
+            android:id="@+id/EnrollmentTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/fbi_image"
+            android:gravity="center_vertical|center_horizontal" />
+    </RelativeLayout>
+
+</RelativeLayout>

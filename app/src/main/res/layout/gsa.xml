@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/datalist"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="GSA"
+        android:textColor="@color/txt_show_color" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/gsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/prn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/gsa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/prn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

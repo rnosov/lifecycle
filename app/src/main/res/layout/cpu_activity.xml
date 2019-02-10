@@ -1,0 +1,316 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" android:baselineAligned="false">
+    <ScrollView 
+	    android:layout_height="fill_parent"   
+	    android:layout_width="300dp"> 
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:background="@color/left_column_bk"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+       
+		 <FrameLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="45dp"
+	            android:layout_marginBottom="@dimen/activity_padding"
+	            android:paddingLeft="@dimen/button_horizontal_margin"
+	            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_init_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_fornt_size" />
+
+        </FrameLayout>
+        
+		  <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_switch_init"
+                android:textSize="@dimen/button_fornt_size" />
+            <ToggleButton
+                android:id="@+id/togBtn_8"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_read_switch"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_0"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_conf_reader"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_1"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:enabled="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+		<FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_conf_prof"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_2"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:enabled="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+      <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_setting"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_3"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:enabled="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_search_card"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_4"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:enabled="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_coll_card"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_5"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:enabled="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_choose_card"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_6"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:enabled="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/txt_borad_bg"
+            android:paddingLeft="@dimen/button_horizontal_margin"
+            android:paddingRight="@dimen/button_horizontal_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/cpu_reset"
+                android:textSize="@dimen/button_fornt_size" />
+
+            <ToggleButton
+                android:id="@+id/togBtn_7"
+                android:layout_width="91dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btn_toggle_bg"
+                android:enabled="false"
+                android:disabledAlpha="?android:attr/disabledAlpha"
+                android:textOff=""
+                android:textOn="" />
+        </FrameLayout>
+    </LinearLayout>
+	</ScrollView>
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+            <EditText
+                android:id="@+id/ed_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+        		android:layout_marginRight="10dp"
+                android:textColor="@color/green"
+                android:background="@color/black"
+                android:scrollbars="vertical"
+                android:longClickable="false"
+                android:clickable="false"
+                android:maxLines="1000"
+				android:singleLine="false"
+				android:text="@string/cpu_show_data"
+				android:inputType="textMultiLine"
+				android:gravity="right|bottom"
+				android:focusable="false"/>
+            
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="10dp">
+	            <Button 
+	                android:id="@+id/btn_init"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/cpu_btn_init"/>
+	            <Button 
+	                android:id="@+id/btn_getRandom"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/cpu_btn_getrandom"/>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

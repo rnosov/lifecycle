@@ -1,0 +1,111 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* run_emulator.sh
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:20.0.0
+guava-14.0.jar => com.google.guava:guava:14.0
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+guava-14.0.jar => version 14.0 in com.google.guava:guava:14.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\androidtfm.jar => app\libs\androidtfm.jar
+* libs\armeabi-v7a\libbarcodereader.so => app\src\main\jniLibs\armeabi-v7a\libbarcodereader.so
+* libs\armeabi-v7a\libbarcodereader43.so => app\src\main\jniLibs\armeabi-v7a\libbarcodereader43.so
+* libs\armeabi-v7a\libbarcodereader44.so => app\src\main\jniLibs\armeabi-v7a\libbarcodereader44.so
+* libs\armeabi-v7a\libIAL.so => app\src\main\jniLibs\armeabi-v7a\libIAL.so
+* libs\armeabi-v7a\libjniPtapi.so => app\src\main\jniLibs\armeabi-v7a\libjniPtapi.so
+* libs\armeabi-v7a\libRFID.so => app\src\main\jniLibs\armeabi-v7a\libRFID.so
+* libs\armeabi-v7a\libSDL.so => app\src\main\jniLibs\armeabi-v7a\libSDL.so
+* libs\armeabi-v7a\libserial_port.so => app\src\main\jniLibs\armeabi-v7a\libserial_port.so
+* libs\armeabi-v7a\libSmartCard.so => app\src\main\jniLibs\armeabi-v7a\libSmartCard.so
+* libs\armeabi-v7a\libwltdecode.so => app\src\main\jniLibs\armeabi-v7a\libwltdecode.so
+* libs\armeabi-v7a\libWltRS.so => app\src\main\jniLibs\armeabi-v7a\libWltRS.so
+* libs\armeabi\libbarcodereader.so => app\src\main\jniLibs\armeabi\libbarcodereader.so
+* libs\armeabi\libbarcodereader43.so => app\src\main\jniLibs\armeabi\libbarcodereader43.so
+* libs\armeabi\libbarcodereader44.so => app\src\main\jniLibs\armeabi\libbarcodereader44.so
+* libs\armeabi\libIAL.so => app\src\main\jniLibs\armeabi\libIAL.so
+* libs\armeabi\libjniPtapi.so => app\src\main\jniLibs\armeabi\libjniPtapi.so
+* libs\armeabi\libRFID.so => app\src\main\jniLibs\armeabi\libRFID.so
+* libs\armeabi\libSDL.so => app\src\main\jniLibs\armeabi\libSDL.so
+* libs\armeabi\libserial_port.so => app\src\main\jniLibs\armeabi\libserial_port.so
+* libs\armeabi\libSmartCard.so => app\src\main\jniLibs\armeabi\libSmartCard.so
+* libs\armeabi\libwltdecode.so => app\src\main\jniLibs\armeabi\libwltdecode.so
+* libs\armeabi\libWltRS.so => app\src\main\jniLibs\armeabi\libWltRS.so
+* libs\DecodeWlt.jar => app\libs\DecodeWlt.jar
+* libs\idcardapi.jar => app\libs\idcardapi.jar
+* libs\litepal-1.3.2-src.jar => app\libs\litepal-1.3.2-src.jar
+* libs\microlog4android-1.0.0.jar => app\libs\microlog4android-1.0.0.jar
+* libs\mips\libbarcodereader.so => app\src\main\jniLibs\mips\libbarcodereader.so
+* libs\mips\libbarcodereader43.so => app\src\main\jniLibs\mips\libbarcodereader43.so
+* libs\mips\libbarcodereader44.so => app\src\main\jniLibs\mips\libbarcodereader44.so
+* libs\mips\libIAL.so => app\src\main\jniLibs\mips\libIAL.so
+* libs\mips\libjniPtapi.so => app\src\main\jniLibs\mips\libjniPtapi.so
+* libs\mips\libRFID.so => app\src\main\jniLibs\mips\libRFID.so
+* libs\mips\libSDL.so => app\src\main\jniLibs\mips\libSDL.so
+* libs\mips\libserial_port.so => app\src\main\jniLibs\mips\libserial_port.so
+* libs\mips\libSmartCard.so => app\src\main\jniLibs\mips\libSmartCard.so
+* libs\mips\libwltdecode.so => app\src\main\jniLibs\mips\libwltdecode.so
+* libs\mips\libWltRS.so => app\src\main\jniLibs\mips\libWltRS.so
+* libs\x86\libbarcodereader.so => app\src\main\jniLibs\x86\libbarcodereader.so
+* libs\x86\libbarcodereader43.so => app\src\main\jniLibs\x86\libbarcodereader43.so
+* libs\x86\libbarcodereader44.so => app\src\main\jniLibs\x86\libbarcodereader44.so
+* libs\x86\libIAL.so => app\src\main\jniLibs\x86\libIAL.so
+* libs\x86\libjniPtapi.so => app\src\main\jniLibs\x86\libjniPtapi.so
+* libs\x86\libRFID.so => app\src\main\jniLibs\x86\libRFID.so
+* libs\x86\libSDL.so => app\src\main\jniLibs\x86\libSDL.so
+* libs\x86\libserial_port.so => app\src\main\jniLibs\x86\libserial_port.so
+* libs\x86\libSmartCard.so => app\src\main\jniLibs\x86\libSmartCard.so
+* libs\x86\libwltdecode.so => app\src\main\jniLibs\x86\libwltdecode.so
+* libs\x86\libWltRS.so => app\src\main\jniLibs\x86\libWltRS.so
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\android_serialport_api\SerialPortManager.java.bak => app\src\main\resources\android_serialport_api\SerialPortManager.java.bak
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
